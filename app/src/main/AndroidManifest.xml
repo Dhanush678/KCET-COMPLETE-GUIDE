@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="net.smallacademy.authenticatorapp">
+    package="net.edutech.authenticatorapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Declaring the required permissions -->
@@ -20,10 +20,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".recycler_notify"
+            android:name="net.edutech.authenticatorapp.recycler_notify"
             android:exported="false" />
         <activity
-            android:name=".HelperActivity"
+            android:name="net.edutech.authenticatorapp.HelperActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,145 +33,145 @@
 
         </activity>
         <activity
-            android:name=".notification"
+            android:name="net.edutech.authenticatorapp.notification"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ProfileActivity"
+            android:name="net.edutech.authenticatorapp.ProfileActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".wonactivity"
+            android:name="net.edutech.authenticatorapp.wonactivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".tryagainpage"
+            android:name="net.edutech.authenticatorapp.tryagainpage"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".mockquestions"
+            android:name="net.edutech.authenticatorapp.mockquestions"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".mocksplash"
+            android:name="net.edutech.authenticatorapp.mocksplash"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".mock2"
+            android:name="net.edutech.authenticatorapp.mock2"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".mocksubjects"
+            android:name="net.edutech.authenticatorapp.mocksubjects"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".aboutkcet_view"
+            android:name="net.edutech.authenticatorapp.aboutkcet_view"
             android:exported="false"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".YoutubePlayer"
+            android:name="net.edutech.authenticatorapp.YoutubePlayer"
             android:exported="false" />
         <activity
-            android:name=".admissionprocess"
+            android:name="net.edutech.authenticatorapp.admissionprocess"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".aboutkcet2"
+            android:name="net.edutech.authenticatorapp.aboutkcet2"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".introActivity"
+            android:name="net.edutech.authenticatorapp.introActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".aboutus"
+            android:name="net.edutech.authenticatorapp.aboutus"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".DrawerBaseActivity"
+            android:name="net.edutech.authenticatorapp.DrawerBaseActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".webview1"
+            android:name="net.edutech.authenticatorapp.webview1"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".requiredDocuments"
+            android:name="net.edutech.authenticatorapp.requiredDocuments"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".puc"
+            android:name="net.edutech.authenticatorapp.puc"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".videotopics"
+            android:name="net.edutech.authenticatorapp.videotopics"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".videotopics2"
+            android:name="net.edutech.authenticatorapp.videotopics2"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".subjects1"
+            android:name="net.edutech.authenticatorapp.subjects1"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".predictor"
+            android:name="net.edutech.authenticatorapp.predictor"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Instructions"
+            android:name="net.edutech.authenticatorapp.Instructions"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashActivity"
+            android:name="net.edutech.authenticatorapp.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".details"
+            android:name="net.edutech.authenticatorapp.details"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".webview"
+            android:name="net.edutech.authenticatorapp.webview"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".subjects"
+            android:name="net.edutech.authenticatorapp.subjects"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".prev"
+            android:name="net.edutech.authenticatorapp.prev"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Rank_Predict"
+            android:name="net.edutech.authenticatorapp.Rank_Predict"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".collegeList"
+            android:name="net.edutech.authenticatorapp.collegeList"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity2"
+            android:name="net.edutech.authenticatorapp.MainActivity2"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EditProfile"
+            android:name="net.edutech.authenticatorapp.EditProfile"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Login"
+            android:name="net.edutech.authenticatorapp.Login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Register"
+            android:name="net.edutech.authenticatorapp.Register"
             android:exported="false"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="net.edutech.authenticatorapp.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
