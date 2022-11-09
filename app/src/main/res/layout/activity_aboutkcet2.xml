@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/loki"
     tools:context=".aboutkcet2">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -31,10 +30,10 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="53dp"
             android:layout_marginEnd="19dp"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/arya"
             android:gravity="center_vertical"
             android:text="K-cet Exam Details"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -43,7 +42,7 @@
 
 
     <RelativeLayout
-        android:layout_width="405dp"
+        android:layout_width="match_parent"
         android:layout_height="602dp"
         android:layout_marginBottom="220dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,9 +65,13 @@
             android:layout_marginTop="14dp"
             android:layout_marginEnd="246dp"
             android:layout_marginBottom="432dp"
+            app:strokeWidth="10dp"
+            app:strokeColor="@color/black"
+            app:cardElevation="10dp"
             android:drawableStart="@drawable/ic_web"
             android:drawablePadding="15dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            >
 
             <ImageView
                 android:layout_width="match_parent"
@@ -84,22 +87,25 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="99dp"
-                android:fontFamily="@font/aclonica"
-                android:paddingStart="10dp"
+                android:fontFamily="@font/arya"
+                android:paddingStart="30dp"
+                android:gravity="center"
                 android:text="Application"
-                android:textColor="@color/colorPrimary"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="34dp"
                 android:layout_marginTop="124dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
+
                 android:paddingStart="10dp"
                 android:text="Process"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
         </androidx.cardview.widget.CardView>
 
@@ -109,9 +115,12 @@
             android:layout_height="156dp"
 
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="182dp"
+            android:layout_marginStart="200dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="66dp"
+            app:strokeWidth="10dp"
+            app:strokeColor="@color/black"
+            app:cardElevation="10dp"
+            android:layout_marginEnd="40dp"
             android:drawableStart="@drawable/ic_web"
             android:drawablePadding="15dp"
             app:cardCornerRadius="20dp">
@@ -130,26 +139,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="99dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="2dp"
                 android:text="1st Pu Syllabus"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="13sp" />
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/syllabus2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="124dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="2dp"
                 android:text="2nd Pu Syllabus"
-                android:textColor="@color/Red"
-                android:textSize="13sp" />
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -159,8 +168,11 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
+            app:strokeWidth="10dp"
+            app:strokeColor="@color/black"
+            app:cardElevation="10dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="203dp"
             android:layout_marginEnd="243dp"
             android:layout_marginBottom="243dp"
@@ -181,25 +193,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="28dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="99dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
-                android:text="Check"
-                android:textColor="@color/colorPrimary"
+                android:text="Check Result"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="124dp"
-                android:fontFamily="@font/aclonica"
-                android:paddingStart="10dp"
-                android:text="Result"
-                android:textColor="@color/colorPrimary"
-                android:textSize="19sp" />
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -207,14 +209,16 @@
             android:layout_width="150dp"
             android:layout_height="156dp"
             android:layout_below="@+id/syllabus"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="186dp"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="41dp"
-            android:layout_marginEnd="64dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="238dp"
             android:drawableStart="@drawable/ic_web"
             android:drawablePadding="15dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="10dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -231,10 +235,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="99dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="Admission"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
 
             <TextView
@@ -243,10 +247,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="124dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="Process"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
         </androidx.cardview.widget.CardView>
 
@@ -259,6 +263,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="15dp"
+            app:strokeWidth="10dp"
+            app:strokeColor="@color/black"
+            app:cardElevation="10dp"
             android:layout_marginTop="394dp"
             android:layout_marginEnd="244dp"
             android:layout_marginBottom="52dp"
@@ -281,10 +288,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="37dp"
                 android:layout_marginTop="99dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="Visit"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
 
             <TextView
@@ -293,10 +300,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="124dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="Website"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
         </androidx.cardview.widget.CardView>
 
@@ -328,10 +335,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="99dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="Admission"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
 
             <TextView
@@ -340,10 +347,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="124dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="Process"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
         </androidx.cardview.widget.CardView>
 
@@ -352,13 +359,17 @@
             android:layout_width="155dp"
             android:layout_height="156dp"
 
-            android:layout_marginStart="185dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="200dp"
             android:layout_marginTop="394dp"
-            android:layout_marginEnd="244dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="52dp"
             android:drawableStart="@drawable/ic_web"
             android:drawablePadding="15dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="10dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -375,10 +386,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="37dp"
                 android:layout_marginTop="99dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="About"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
 
             <TextView
@@ -387,14 +398,14 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="124dp"
-                android:fontFamily="@font/aclonica"
+                android:fontFamily="@font/arya"
                 android:paddingStart="10dp"
                 android:text="Kcet"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:textSize="19sp" />
         </androidx.cardview.widget.CardView>
 
 
     </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#393FA8"
     tools:context=".aboutus">
 
     <ImageView
@@ -21,12 +20,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="119dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="149dp"
         android:fontFamily="@font/aclonica"
         android:text="About us"
         android:textAllCaps="true"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textSize="20sp" />
 
     <ImageView
@@ -49,9 +48,9 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/aclonica"
-        android:text="-----------Kcet Exam Guide-----------"
+        android:text="-----------Kcet Complete Guide-----------"
         android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textSize="15sp" />
 
     <TextView
@@ -66,7 +65,7 @@
         android:fontFamily="@font/aclonica"
         android:text="1.0.0.0"
         android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textSize="12sp" />
 
     <ScrollView
@@ -97,7 +96,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="k-cet Complete Guide is a platform where you get all the informations about exam and the study materials that are helpful for the students. Our mission is to help Students to enhance their Potential and build exceptional Knowledge using our uniquely powerful platform and our tirelessly helpful support and educational resources."
                 android:textAllCaps="false"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -132,7 +131,7 @@
                     android:fontFamily="@font/aclonica"
                     android:text="Join our Telegram Channel"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -172,7 +171,7 @@
                     android:text="Follow us on instagram"
 
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -211,7 +210,7 @@
                     android:fontFamily="@font/aclonica"
                     android:text="Follow us on Facebook"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -261,7 +260,7 @@
                     android:fontFamily="@font/aclonica"
                     android:text="Contact us by E-mail"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -302,7 +301,7 @@
                     android:fontFamily="@font/aclonica"
                     android:text="Rate us on Play Store"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -342,7 +341,7 @@
                     android:fontFamily="@font/aclonica"
                     android:text="Share app"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

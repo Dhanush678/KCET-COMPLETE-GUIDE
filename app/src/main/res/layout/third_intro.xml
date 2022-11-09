@@ -47,7 +47,7 @@
         </TextView>
 
         <ImageView
-            android:layout_width="330dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/mockimg"
             android:layout_gravity="center">
