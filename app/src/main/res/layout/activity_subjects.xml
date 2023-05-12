@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loki"
     tools:context=".subjects">
 
     <RelativeLayout
         android:id="@+id/relativeLayout4"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorWhite"
         tools:ignore="MissingConstraints">>
 
         <ImageView
@@ -33,7 +32,7 @@
             android:fontFamily="@font/aclonica"
             android:gravity="center_vertical"
             android:text="Previous Year Question Papers"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -47,14 +46,18 @@
 
         android:drawablePadding="15dp"
 
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button25"
         app:layout_constraintEnd_toStartOf="@+id/button23"
         app:layout_constraintHorizontal_bias="0.623"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.748">
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box"></ImageView>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="110dp"
@@ -87,15 +90,19 @@
         android:layout_marginTop="258dp"
         android:drawableStart="@drawable/ic_web"
         android:drawablePadding="15dp"
+        app:cardElevation="20dp"
 
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/button24"
         app:layout_constraintEnd_toStartOf="@+id/button24"
         app:layout_constraintHorizontal_bias="0.623"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
         app:layout_constraintVertical_bias="1.0">
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box"></ImageView>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -130,14 +137,18 @@
         android:layout_alignParentBottom="true"
         android:drawableStart="@drawable/ic_web"
         android:drawablePadding="15dp"
-
-        app:cardCornerRadius="20dp"
+app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.612">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/box"></ImageView>
 
         <ImageView
             android:layout_width="match_parent"
@@ -170,8 +181,8 @@
         android:layout_marginBottom="48dp"
         android:drawableStart="@drawable/ic_web"
         android:drawablePadding="15dp"
-
-        app:cardCornerRadius="20dp"
+app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
@@ -180,7 +191,10 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
         app:layout_constraintVertical_bias="1.0">
 
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/box"></ImageView>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -208,11 +222,10 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="460dp"
-        android:background="@drawable/btn_bg"
+        android:background="@drawable/box"
         android:padding="15dp"
         android:text="KEY ANSWERS"
         android:textSize="18sp"
-        app:backgroundTint="@color/colorWhite"
         app:cornerRadius="800dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".introActivity"
-    android:background="@drawable/loki">
+   >
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
@@ -36,7 +36,7 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:padding="5dp"
-            android:background="@drawable/btn_bg"
+            android:background="@drawable/box"
             android:textColor="@color/colorBlack"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

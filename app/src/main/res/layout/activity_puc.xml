@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loki"
     tools:context=".puc">
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -15,7 +13,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="#833F51B5">>
+            android:background="@color/colorWhite">>
 
             <ImageView
                 android:id="@+id/back13"
@@ -35,7 +33,7 @@
                 android:fontFamily="@font/aclonica"
                 android:gravity="center_vertical"
                 android:text="Video lectures"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -44,31 +42,27 @@
         </RelativeLayout>
 
         <Button
-            android:id="@+id/button_1"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/btn_bg"
+            android:background="@drawable/box"
             android:padding="15dp"
             android:onClick="openactivity_t1"
             android:text="First Year puc"
             android:textSize="18sp"
-            app:backgroundTint="@color/colorWhite"
             app:cornerRadius="800dp" />
 
         <Button
-            android:id="@+id/button_2"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/btn_bg"
+            android:background="@drawable/box"
             android:padding="15dp"
             android:onClick="openactivity_t2"
             android:text="Second Year PUC"
             android:textSize="18sp"
-            app:backgroundTint="@color/colorWhite"
             app:cornerRadius="800dp" />
 
 

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/animation"
     android:id="@+id/layoutMAIN"
     tools:context=".MainActivity2"
     tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
@@ -13,7 +12,6 @@
 
     <LinearLayout
 
-        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
 
         android:layout_height="match_parent"
@@ -34,7 +32,7 @@
                 android:fontFamily="@font/alike_angular"
                 android:gravity="center_vertical"
                 android:text="Hey there !"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginStart="5dp"
@@ -47,7 +45,6 @@
                 app:layout_constraintVertical_bias="0.056" />
 
             <pl.droidsonroids.gif.GifImageView
-                android:id="@+id/gifImageView"
                 android:layout_width="40dp"
                 android:layout_height="45dp"
                 android:background="#00ff0000"
@@ -59,23 +56,7 @@
                 app:layout_constraintTop_toTopOf="@+id/textView13"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/welcome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
 
-                android:fontFamily="@font/alike_angular"
-                android:gravity="center_vertical"
-                android:text=""
-                android:textColor="@color/colorWhite"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.029"
-                app:layout_constraintStart_toEndOf="@+id/gifImageView"
-                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -89,11 +70,15 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+          >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+              >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -106,20 +91,30 @@
                     android:fontFamily="@font/aclonica"
                     android:text="Categories"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
                     android:textSize="24sp" />
 
 
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:orientation="horizontal"
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="30dp"
-                        android:background="@drawable/border">
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/box">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/student"
+                            android:padding="5dp">
+
+                        </ImageView>
+
+
 
 
                         <TextView
@@ -127,14 +122,14 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/capriola"
                             android:padding="10dp"
-                            android:paddingStart="30dp"
-                            android:text="Rank
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="20dp"
+                            android:text="Rank Predictor"
+                            android:gravity="center"
 
-
-                    Predictor"
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="25sp" />
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/rank"
@@ -145,27 +140,25 @@
                             android:padding="20dp"
 
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite" />
+                            android:textColor="@color/blackTextColor" />
 
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="75dp"
-                        android:layout_height="85dp"
-                        android:layout_marginLeft="225dp"
-                        android:layout_marginTop="28dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/ranking" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border"
-                        android:layout_margin="30dp">
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@drawable/box">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/scollege"
+                            android:padding="5dp">
+
+                        </ImageView>
+
+
 
 
                         <TextView
@@ -173,14 +166,14 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/capriola"
                             android:padding="10dp"
-                            android:paddingStart="30dp"
-                            android:text="College
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="10dp"
+                            android:text="College Predictor"
+                            android:gravity="center"
 
-
-                    Predictor"
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="25sp" />
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/college"
@@ -189,30 +182,37 @@
                             android:layout_alignParentBottom="true"
                             android:background="#00ff0000"
                             android:padding="20dp"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorWhite" />
 
+                            android:textAllCaps="true"
+                            android:textColor="@color/blackTextColor" />
 
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="75dp"
-                        android:layout_height="85dp"
-                        android:layout_marginLeft="230dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="28dp"
-                        android:src="@drawable/school" />
-                </RelativeLayout>
 
-                <RelativeLayout
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:orientation="horizontal"
                     android:layout_height="wrap_content">
+
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border"
-                        android:layout_margin="30dp">
+                        android:layout_width="150dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_height="150dp"
+
+                        android:background="@drawable/box">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/video"
+                            android:padding="5dp">
+
+                        </ImageView>
+
+
 
 
                         <TextView
@@ -220,14 +220,14 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/capriola"
                             android:padding="10dp"
-                            android:paddingStart="30dp"
-                            android:text="Video
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="20dp"
+                            android:text="Video Lectures"
+                            android:gravity="center"
 
-
-                    Lectures"
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="25sp" />
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/videos"
@@ -236,75 +236,96 @@
                             android:layout_alignParentBottom="true"
                             android:background="#00ff0000"
                             android:padding="20dp"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorWhite" />
 
+                            android:textAllCaps="true"
+                            android:textColor="@color/blackTextColor" />
 
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="220dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/videos" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border"
-                        android:layout_margin="30dp">
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/sad"
+                            android:padding="5dp">
+
+                        </ImageView>
+
+
 
 
                         <TextView
-                            android:id="@+id/previous"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/capriola"
                             android:padding="10dp"
-                            android:paddingStart="25dp"
-                            android:text="previous
-                     year papers"
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="10dp"
+                            android:text="previous year papers"
+                            android:gravity="center"
+
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="25sp" />
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/previous"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00ff0000"
+                            android:padding="20dp"
+
+                            android:textAllCaps="true"
+                            android:textColor="@color/blackTextColor" />
 
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="75dp"
-                        android:layout_height="85dp"
-                        android:layout_marginLeft="240dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="28dp"
-                        android:src="@drawable/exam" />
-                </RelativeLayout>
-                <RelativeLayout
+
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
                     android:layout_height="wrap_content">
+
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border"
-                        android:layout_margin="30dp">
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/box">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/test"
+                            android:padding="5dp">
+
+                        </ImageView>
+
+
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/capriola"
-                            android:padding="20dp"
-                            android:text="MOck test"
+                            android:padding="10dp"
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="40dp"
+                            android:text="Mock Test"
+                            android:gravity="center"
+
                             android:textAllCaps="true"
-                            android:paddingStart="30dp"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="25sp" />
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/mocktest"
@@ -313,29 +334,28 @@
                             android:layout_alignParentBottom="true"
                             android:background="#00ff0000"
                             android:padding="20dp"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorWhite" />
 
+                            android:textAllCaps="true"
+                            android:textColor="@color/blackTextColor" />
 
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_marginLeft="240dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/test"
-                        android:layout_marginTop="28dp"/>
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border"
-                        android:layout_margin="30dp">
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@drawable/box">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/uni"
+                            android:padding="5dp">
+
+                        </ImageView>
+
+
 
 
                         <TextView
@@ -343,90 +363,89 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/capriola"
                             android:padding="10dp"
-                            android:text="college
-                    list"
-                            android:textAllCaps="true"
-                            android:paddingStart="30dp"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="25sp" />
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="10dp"
+                            android:text="college list"
+                            android:gravity="center"
+                            android:layout_marginStart="20dp"
 
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/collegeBTN"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginBottom="-270dp"
+                            android:layout_alignParentBottom="true"
                             android:background="#00ff0000"
                             android:padding="20dp"
+
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite" />
+                            android:textColor="@color/blackTextColor" />
 
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="90dp"
-                        android:layout_marginLeft="200dp"
-                        android:layout_marginTop="28dp"
-                        android:layout_marginBottom="15dp"
-                        android:src="@drawable/fsfsd" />
-                </RelativeLayout>
-                <RelativeLayout
+
+                </LinearLayout>
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp">
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/border"
-                        android:layout_margin="30dp">
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/box">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/aboutkcet"
+                            android:padding="5dp">
+
+                        </ImageView>
+
+
 
 
                         <TextView
-                            android:layout_width="225dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/capriola"
                             android:padding="10dp"
-                            android:paddingStart="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:paddingStart="20dp"
                             android:text="all about
 kcet exam"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="25sp" />
+                            android:gravity="center"
 
-                        <Button
-                            android:id="@+id/doc"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentBottom="true"
-                            android:background="#00ff0000"
-                            android:padding="25dp"
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite" />
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/d"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginBottom="-270dp"
+                            android:layout_alignParentBottom="true"
                             android:background="#00ff0000"
                             android:padding="20dp"
+
                             android:textAllCaps="true"
-                            android:textColor="@color/colorWhite" />
+                            android:textColor="@color/blackTextColor" />
 
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="75dp"
-                        android:layout_height="85dp"
-                        android:layout_marginLeft="240dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/documents"
-                        android:layout_marginTop="28dp"/>
 
-                </RelativeLayout>
+
+
+                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>
@@ -443,8 +462,8 @@ kcet exam"
         android:background="@drawable/input_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:itemTextColor="@color/colorPrimaryDark"
-        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextColor="@color/blackTextColor"
+        app:itemIconTint="@color/black"
 
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

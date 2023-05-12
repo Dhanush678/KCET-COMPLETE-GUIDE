@@ -1,7 +1,6 @@
 package net.edutech.authenticatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -10,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import net.edutech.authenticatorapp.utility.NetworkChangeList;
 
@@ -30,7 +30,7 @@ public class admissionprocess extends AppCompatActivity {
                 finish();
             }
         });
-        CardView schedule = findViewById(R.id.schedule);
+        TextView schedule = findViewById(R.id.schedule);
         schedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +42,7 @@ public class admissionprocess extends AppCompatActivity {
 
             }
         });
-        CardView required_documents = findViewById(R.id.required_documents);
+        TextView required_documents = findViewById(R.id.required_documents);
         required_documents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +53,7 @@ public class admissionprocess extends AppCompatActivity {
 
             }
         });
-        CardView official_notification = findViewById(R.id.official_notification);
+        TextView official_notification = findViewById(R.id.official_notification);
         official_notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

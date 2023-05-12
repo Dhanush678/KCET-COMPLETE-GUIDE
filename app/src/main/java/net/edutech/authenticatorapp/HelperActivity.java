@@ -21,8 +21,10 @@ public class HelperActivity extends Activity {
             overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
 
 
-        } else {
-            moveToSecondary();
+        }
+        else {
+            startActivity(new Intent(new Intent(getApplicationContext(),MainActivity2.class)));
+            finish();
         }
     }
 
@@ -30,11 +32,5 @@ public class HelperActivity extends Activity {
      super.onCreate(savedInstanceState);
 
 
- } public void moveToSecondary(){
-        // use an intent to travel from one activity to another.
-        Intent intent = new Intent(this,Register.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
-    }
-
+ }
 }

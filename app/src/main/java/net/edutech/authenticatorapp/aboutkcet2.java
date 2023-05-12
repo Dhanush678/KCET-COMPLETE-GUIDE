@@ -1,7 +1,6 @@
 package net.edutech.authenticatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -9,6 +8,7 @@ import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -52,7 +52,7 @@ public class aboutkcet2 extends AppCompatActivity {
             }
         });
 
-        CardView application = findViewById(R.id.application);
+        TextView application = findViewById(R.id.application);
         application.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +62,7 @@ public class aboutkcet2 extends AppCompatActivity {
 
             }
         });
-        CardView result = findViewById(R.id.result);
+        TextView result = findViewById(R.id.result);
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,7 +71,7 @@ public class aboutkcet2 extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
-        CardView admission = findViewById(R.id.admission);
+        TextView admission = findViewById(R.id.admission);
         admission.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +80,7 @@ public class aboutkcet2 extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
-        CardView about = findViewById(R.id.about);
+        Button about = findViewById(R.id.about);
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +88,7 @@ public class aboutkcet2 extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
-        CardView kea_website = findViewById(R.id.kea_website);
+        Button kea_website = findViewById(R.id.kea_website);
         kea_website.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

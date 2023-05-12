@@ -58,10 +58,7 @@ public class MainActivity2 extends DrawerBaseActivity {
         setContentView(activityMain2Binding.getRoot());
         allocateActivityTitle("MainActivity2");
         ConstraintLayout constraintLayout=findViewById(R.id.layoutMAIN);
-        AnimationDrawable animationDrawable=(AnimationDrawable) constraintLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(35000000);
-        animationDrawable.setExitFadeDuration(55000000);
-        animationDrawable.start();
+
         ActionBar actionBar;
         actionBar = getSupportActionBar();
 
@@ -85,10 +82,7 @@ public class MainActivity2 extends DrawerBaseActivity {
                         startActivity(new Intent(getApplicationContext(),MainActivity2.class));
                         finish();
                         break;
-                    case R.id.person:
-                        startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
-                        finish();
-                        break;
+
                     case R.id.about:
                         startActivity(new Intent(getApplicationContext(),aboutus.class));
                         finish();
@@ -107,7 +101,6 @@ public class MainActivity2 extends DrawerBaseActivity {
 
 
 
-        final TextView textView=findViewById(R.id.welcome);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
@@ -116,33 +109,12 @@ public class MainActivity2 extends DrawerBaseActivity {
 
 
 
-        DocumentReference documentReference = fStore.collection("users").document(userId);
-        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
-                if(documentSnapshot.exists()){
-                    textView.setText(documentSnapshot.getString("fName"));
-
-                }else {
-                    Log.d("tag", "onEvent: Document do not exists");
-                }
-            }
-        });
 
 
-        ImageView colle = findViewById(R.id.person);
-        colle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent12 = new Intent(getApplicationContext(), ProfileActivity.class);
-                startActivity(intent12);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 
 
-            }
-        });
 
-        TextView prevqp = findViewById(R.id.previous);
+        Button prevqp = findViewById(R.id.previous);
         prevqp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,13 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loki"
     tools:context=".mock2">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">>
@@ -28,10 +26,10 @@
             android:layout_marginStart="65dp"
             android:layout_marginEnd="44dp"
             android:layout_marginBottom="-295dp"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/arya"
             android:gravity="center_vertical"
             android:text="Mock test"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/blackTextColor"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>
@@ -43,13 +41,18 @@
         android:layout_marginEnd="@dimen/_5sdp"
         android:background="@drawable/btn_bg"
         app:cardBackgroundColor="@color/colorWhite"
-        app:cardCornerRadius="25dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.143">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/box">
+
 
         <TextView
             android:id="@+id/subject"
@@ -120,7 +123,7 @@
             android:textSize="18sp"
             app:backgroundTint="#41A80A"
             app:cornerRadius="55dp" />
-
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loki"
     tools:context=".mocksplash">
 
     <LinearLayout
@@ -28,7 +27,7 @@
             android:fontFamily="sans-serif-black"
             android:gravity="center"
             android:text="Starting test..."
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
 
         <ProgressBar

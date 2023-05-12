@@ -28,6 +28,8 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
         super.setContentView(drawerLayout);
         Toolbar toolbar =drawerLayout.findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(null);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         NavigationView navigationView=drawerLayout.findViewById(R.id.navVIEW);
         navigationView.setNavigationItemSelectedListener(this);
         ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.menu_drawer_open,R.string.menu_drawer_close);
@@ -40,34 +42,16 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         drawerLayout.closeDrawer(GravityCompat.START);
         switch (item.getItemId()){
-            case R.id.acc:
-                startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
-                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-
-
-                break;
-            case R.id.editAcc:
-                startActivity(new Intent(getApplicationContext(),EditProfile.class));
-                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 
 
 
-                break;
             case R.id.Aboutus:
                 startActivity(new Intent(getApplicationContext(),aboutus.class));
                                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 
 
                 break;
-            case R.id.logout:
-                FirebaseAuth.getInstance().signOut();//logout
-                startActivity(new Intent(getApplicationContext(),Login.class));
 
-                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-
-
-                finish();
-                break;
             case R.id.exit:
                 android.os.Process.killProcess(android.os.Process.myPid());
                 System.exit(1);

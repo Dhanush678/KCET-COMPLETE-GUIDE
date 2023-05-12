@@ -14,37 +14,9 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            app:theme="@style/ToolbarColoredBackArrow"
             android:layout_height="?attr/actionBarSize"
             android:background="@drawable/top"
-
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:titleTextColor="@color/colorPrimaryDark">
-
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize">
-
-
-                <ImageView
-                    android:id="@+id/person"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_alignParentTop="true"
-                    android:src="@drawable/ic_baseline_account_circle_24"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.986"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.523">
-
-                </ImageView>
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+>
 
 
         </com.google.android.material.appbar.MaterialToolbar>

@@ -20,9 +20,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="net.edutech.authenticatorapp.recycler_notify"
-            android:exported="false" />
-        <activity
             android:name="net.edutech.authenticatorapp.HelperActivity"
             android:exported="true">
             <intent-filter>
@@ -32,14 +29,6 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name="net.edutech.authenticatorapp.notification"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name="net.edutech.authenticatorapp.ProfileActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
         <activity
             android:name="net.edutech.authenticatorapp.wonactivity"
             android:exported="false"
@@ -156,22 +145,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="net.edutech.authenticatorapp.MainActivity2"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="net.edutech.authenticatorapp.EditProfile"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="net.edutech.authenticatorapp.Login"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="net.edutech.authenticatorapp.Register"
-            android:exported="false"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity
-            android:name="net.edutech.authenticatorapp.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
